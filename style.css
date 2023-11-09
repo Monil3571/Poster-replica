@@ -1,0 +1,226 @@
+/* For the css part, i have left some properties and values which i tried but didnt work as comments so i can refer to them in the future  */
+
+/* To start with, i have added a font-family of a downloaded font. Its almost identical to the one in the original poster(only P and C are different) but this is the only one i could find */
+@font-face{
+    src: url(Pirates-main-font/Pieces\ of\ Eight.ttf);
+    font-family: pirates-main;
+}
+/* Margin 0 padding 0 to avoid any unwanted white spaces or gaps */
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+/* I have given a background with  a linear gradient to the whole body */
+body{
+    /* background-color: aqua; */
+    /* background-image: linear-gradient(to bottom,rgb(39, 79, 112), rgb(205, 207, 213)); */
+    height: 100%;
+    /* background-color: #6daddb; */
+    background-image: linear-gradient(315deg, #6daddb 0%, #313131 76%);   
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /*  */
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+/* For the header i have just styled the font and spacing */
+header{
+    height: 3vw;
+    text-align: center;
+    margin-top: 20px;
+    /* padding-bottom: 1.2vw; */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    line-height: 2.3vw;
+    font-size: 0.8vw;
+}
+/* For the a tag i have removed the default text decoration and given some padding so when we add the hover effect, it will show on a larger area */
+a{
+    text-decoration: none;
+    padding: 10px;
+    /* margin: 50px; */
+    color: inherit;
+    border-radius: 8px;
+}
+/* Here i have changed the background color and the text color for the hover psuedo class of the a tag */
+a:hover{
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+/* For the image container i have given some padding and set the background image as the original poster without text*/
+.image-container{
+    margin: 50px auto;
+    /* background-color: white; */
+    background-image: url("assets/pirates-white-small-centered.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 944px;
+    width: 550px;
+
+}
+
+/* I have set the display of the top casting container as flex to give the appropriate spacing*/
+.top-casting-container{
+    color: rgb(205, 225, 225);
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    font-size: 0.6rem;
+    /* The transform: scale will increase the height of the text with the width remaining the same because this was how it was formatted in the original poster */
+    transform: scale(1, 1.5);
+    /* gap: 20px; */
+}
+.first-word{
+    font-size: 0.5rem;
+}
+/* For the main container also i have set the display as flex but in column direction to accomodate all the details */
+.main-container{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 55%;
+    align-items: center;   
+}
+/* In the following section i have just styled the font of the first 2 lines */
+
+.first-line{
+    letter-spacing: 0.17rem;
+    font-size: 0.7rem;
+    display: inline-block;
+    font-weight: 525;
+}
+.first-letter{
+    font-size: 1.42em;
+    letter-spacing: 0.13em;
+}
+.second-line{
+    font-size: 0.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+/* For the third line, i have styled the font, set the display as flex and added a background image at the center for the skull icon */
+.third-line{
+    font-family: pirates-main;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0px 0.2px 1.5px rgb(238, 51, 120);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90px;
+    background-image: url(assets/pirates-skull-no-bg.png);
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 20px;
+    position: relative;
+    /* padding-right: 40px; */
+}
+/* For the production title, i have styled the font. here also i have used the transform property to change the height of the font without changing the width*/
+.production-title{
+    font-size: 0.43rem;
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    left: 14%;
+    letter-spacing: 0.01rem;
+    transform: scale(1, 1.5);
+    color: rgb(169, 179, 183);
+    text-shadow: none;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* overflow-y: visible; */
+    
+}
+/* In the following section i have styled some words and letters individually */
+.third-line span{
+    letter-spacing: 0;
+}
+
+.third-line .first-letter{
+    /* height: 125px; */
+    /* width: 2rem; */
+    /* background-color: yellow; */
+    font-size: 3.5rem;
+}
+.second-word{
+    /* background-color: blue; */
+    /* padding: 100px; */
+    margin-left: 55px;
+    /* position: relative; */
+    /* left: 40%; */
+}
+.middle-words{
+    /* background-color: yellow; */
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2px;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 12px;
+    position: relative;
+    margin-right: 12px;
+    text-align: right;
+    /* left: 1.5%;     */
+}
+.fourth-line{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;    
+}
+/* For the end-text also i have styled the font and given some margins as well. */
+.end-text{
+    text-justify: distribute;
+    text-align: center;
+    /* vertical-align: text-top; */
+    /* text-wrap: wrap; */
+    white-space: normal;
+    margin-top: 25px;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 0.5rem;
+    font-weight: 550;
+    line-height: 0.6rem;
+    transform: scale(1, 1.5);
+    color: rgb(204, 215, 219);
+    /* min-height: fit-content; */
+}
+/* For the release-date i have styled the font. Here also i have used the transform attribute but this time i have increased the width without the height changing */
+.release-date{
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; */
+    font-family: 'Donegal One', serif;
+    font-size: 0.9rem;
+    /* font-weight: 500; */
+    /* white-space: normal; */
+    /* vertical-align: bottom; */
+    margin-top: 2px;
+    /* display: inline-block; */
+    /* position: relative; */
+    color: black;
+    padding: 0 35px;
+    /* box-sizing: content-box; */
+    /* left: 5%; */
+    /* bottom: 25%; */
+    /* top: 5%; */
+    transform: scale(1.5, 0.9);
+}
+/* I have set the diplay of the last line as flex just to accomodate for the large size of the release date text */
+.last-line{
+    /* margin-top: 2px; */
+    display: flex;
+    /* align-items: first baseline; */
+    align-items: start;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 20px;
+}
+.last-line .first-letter{
+    font-size: 1.1rem;   
+}

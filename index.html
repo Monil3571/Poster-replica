@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <!-- In the following lines i have linked some fonts which ill be using in the poster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap" rel="stylesheet">
+   <!-- Linking css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- I have added a header with a link to the orignal poster -->
+    <header> 
+   <h1>
+
+     This is a responsive(somewhat) poster of my favorite movie!!!!
+     <br>
+
+     <a href="assets/reference pic.webp" target="_blank">This is a link to the original poster for reference</a>
+   </h1>
+    </header>
+    <!-- I have used a section tag to add some semantics to the webpage -->
+    <section>
+      <!-- The immage container will be the main class in which i have set the background image of the poster without text -->
+      <div class="image-container">
+        <!-- The top casting container contains the cast at the very top of the poster, i have also added some more child classes within this container to change the size of some specific words -->
+        <div class="top-casting-container">
+          <p>JOHNNY DEPP</p>
+          <p>ORLONDO BLOOM</p>
+          <p>KEIRA KNIGHTLEY</p>
+          <p><span class="first-word">with </span>CHOW YUN-FAT</p>
+          <p><span class="first-word">and </span>GEOFFREY RUSH</p>
+        </div>
+        <!-- The main container is where the main text of the poster will be implemented -->
+        <div class="main-container">
+          <!-- The first line will contain the name walt disney pictures with the first letter of each word being selected in a different class to change the size -->
+          <p class="first-line">
+            <span class="first-letter">W</span>ALT
+            <span class="first-letter">D</span>ISNEY
+            <span class="first-letter">P</span>ICTURES
+          </p>
+          <!-- The second line is just a normal text with smaller font size -->
+          <p class="second-line">PRESENTS</p>
+          <!-- The third line containes the main title of the movie along with a production credit at the top. This is also where the skull image is implemented -->
+          <!-- There are also some child classes in this parent class to style some specific words and letters -->
+          <div class="third-line">
+            <p class="production-title">A Jerry Bruckheimer production</p>
+            <span class="first-letter">P</span>IRATES
+            <span class="middle-words">of <br />the</span>
+            <span class="first-letter second-word">C</span>ARIBBEAN
+          </div>
+          <!-- The fourth line is just the name of the iteration of the franchise -->
+          <p class="fourth-line">AT WORLD'S END</p>
+          <!-- The class end-text contains the name of the actors of the film which are also repeated to fill the empty space -->
+          <div class="end-text">
+            Keira Knightley, Bill Nighy, Orlando Bloom, Stellan Skarsgard, Chow
+            Yun Fat, Keith Richards, Mackenzie Crook, Jack Davenport, Kevin
+            McNally, Chow Yun Fat, Geoffrey Rush, Johnny Depp, Lee Arenberg,
+            Jonathan Pryce Keira Knightley, Bill Nighy, Orlando Bloom, Stellan
+            Skarsgard, Chow Yun Fat, Keith Richards,Mackenzie Crook, Jack
+            Davenport, Kevin McNally, Chow Yun Fat <br>
+          
+            <!-- I have given the last-line another class to control the spacing and sizing of the text, since i need to change the size and font of the release date which i have done so by adding a class for the same. -->
+              <div class="last-line">
+                
+                Geoffrey Rush, Johnny Depp
+                <span class="release-date"><span class="first-letter">M</span>AY <span class="first-letter">25</span></span>Geoffrey Rush, Johnny Depp
+              </div>
+            
+
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
